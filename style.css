@@ -1,0 +1,57 @@
+/* 카카오톡 스타일 */
+.chat-container {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-messages .message {
+    margin-bottom: 10px;
+}
+
+.chat-messages .message.user {
+    text-align: right;
+}
+
+.chat-messages .message.assistant {
+    text-align: left;
+}
+
+.chat-input {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.chat-input button {
+    width: 18%;
+    padding: 8px;
+    background-color: #0084ff; /* 카톡 색상 */
+    color: white;
+    border: none;
+}
+
+#gemini-frame {
+    display: none; /* iframe 숨기기 */
+}
